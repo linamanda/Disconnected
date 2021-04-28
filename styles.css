@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.title {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'PT Mono', monospace;
+  font-size: 10vw;
+  letter-spacing: 1vw;
+  color: white;
+}
+
+h2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 3vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  font-size: 2vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00e01a;
+  line-height: 3vw;
+}
+
+span {
+  color: #d9343a;
+  white-space: pre-wrap;
+  font-weight: bold;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas:
+  "intro intro intro intro intro intro intro intro intro intro intro intro intro"
+  "dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon"
+  "intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox"
+  "netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu"
+  "mod mod mod mod mod mod mod mod mod mod mod mod mod"
+  "hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan";
+}
+
+.introduction {
+  grid-area: intro;
+  background-color: black;
+}
+
+.introduction p:nth-of-type(1) {
+  height: 30vh;
+}
+
+.introduction p:nth-of-type(2) {
+  height: 40vh;
+  margin-left: 30vw;
+}
+
+.introduction p:nth-of-type(3) {
+  height: 20vh;
+  margin-top: 50vh;
+  margin-left: -30vw;
+}
+
+.introduction p:nth-of-type(4) {
+  height: 20vh;
+  margin-top: 20vh;
+  margin-left: 20vw;
+}
+
+.introduction p:nth-of-type(5) {
+  height: 100vh;
+  margin-top: 30vh;
+}
+
+.introduction p:nth-of-type(6) {
+  height: 100vh;
+  margin-left: -70vw;
+}
+
+.introduction p:nth-of-type(7) {
+  height: 100vh;
+}
+
+.introduction p:nth-of-type(8) {
+  height: 100vh;
+  margin-left: 60vw;
+}
+
+.introduction p:nth-of-type(9) {
+  height: 100vh;
+}
+
+.introduction p:nth-of-type(10) {
+  height: 100vh;
+  margin-bottom: 20vh;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.dissociativeAnonymity {
+  grid-area: dissAnon;
+}
+
+.dissociativeAnonymity p:nth-of-type(4) {
+  margin-left: -40vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(5) {
+  margin-left: 40vw;
+  margin-right: 10vw;
+  line-height: 3vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(7) {
+  margin-left: -30vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(8) {
+  margin-left: 30vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(10) {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  line-height: 3vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(8) {
+  margin-left: 30vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(15) {
+  height: 30vh;
+  margin-top: 30vh;
+  margin-left: -30vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(16) {
+  height: 30vh;
+  margin-left: 10vw;
+  margin-bottom: 70vh;
+}
+
+.internetToxicity {
+  grid-area: intTox;
+}
+
+.internetToxicity p:nth-of-type(2) {
+  margin-left: -30vw;
+}
+
+.internetToxicity p:nth-of-type(3) {
+  margin-left: 40vw;
+  margin-right: 10vw;
+  line-height: 3vw;
+}
+
+.internetToxicity p:nth-of-type(4) {
+  margin-bottom: 30vh;
+}
+
+.netNeutrality {
+  grid-area: netNeu;
+}
+
+.netNeutrality p:nth-of-type(1) {
+  margin-top: 50vh;
+}
+
+.netNeutrality p:nth-of-type(4) {
+  margin-left: 40vw;
+}
+
+.netNeutrality p:nth-of-type(5) {
+  margin-left: -40vw;
+}
+
+.netNeutrality p:nth-of-type(7) {
+  margin-top: 40vw;
+}
+
+.netNeutrality p:nth-of-type(10) {
+  margin-left: -50vw;
+}
+
+.netNeutrality p:nth-of-type(11) {
+  margin-left: 50vw;
+}
+
+.netNeutrality p:nth-of-type(12) {
+  height: 20vh;
+  margin-top: 30vh;
+  margin-left: -20vw;
+}
+
+.netNeutrality p:nth-of-type(13) {
+  height: 20vh;
+  margin-left: 10vw;
+  margin-bottom: 50vh;
+}
+
+.moderation {
+  grid-area: mod;
+}
+
+.moderation p:nth-of-type(4) {
+  margin-left: 40vw;
+}
+
+.moderation p:nth-of-type(6) {
+  height: 70vh;
+  margin-left: -60vw;
+}
+
+.moderation p:nth-of-type(7) {
+  height: 70vh;
+}
+
+.moderation p:nth-of-type(8) {
+  height: 70vh;
+  margin-left: 60vw;
+}
+
+.moderation p:nth-of-type(9) {
+  height: 70vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-bottom: 30vh;
+  line-height: 3vw;
+  text-align: center;
+}
+
+.hardwareBanning {
+  grid-area: hardBan;
+}
+
+.hardwareBanning p:nth-of-type(2) {
+  margin-left: -60vw;
+}
+
+.hardwareBanning p:nth-of-type(3) {
+  margin-left: 60vw;
+}
+
+.hardwareBanning p:nth-of-type(4) {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  line-height: 3vw;
+  text-align: center;
+}
+
+.hardwareBanning p:nth-of-type(5) {
+  height: 100vh;
+}
