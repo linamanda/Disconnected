@@ -50,66 +50,148 @@ span {
 
 .mainContent {
   display: grid;
-  grid-template-columns: repeat(13, 1fr);
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "intro intro intro intro intro intro intro intro intro intro intro intro intro"
-  "dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon dissAnon"
-  "intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox intTox"
-  "netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu netNeu"
-  "mod mod mod mod mod mod mod mod mod mod mod mod mod"
-  "hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan hardBan";
+  "intro"
+  "dissAnon"
+  "intTox"
+  "netNeu"
+  "mod"
+  "hardBan";
 }
 
 .introduction {
   grid-area: intro;
   background-color: black;
+
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas:
+  "quote quote quote quote quote quote quote quote quote quote quote quote quote"
+  "area1 area1 area1 line1 line1 line1 line1 line1 line1 line1 . . ."
+  "area1 area1 area1 . . line2 line2 line2 line2 line2 line2 line2 ."
+  "area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2 area2"
+  "line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3"
+  "area3 area3 area3 area3 area3 line4 line4 line4 line4 line4 line4 line4 line4"
+  ". . . . area4 area4 area4 area4 area4 area4 area4 area4 area4"
+  "area5 area5 area5 area5 area5 area5 area5 area5 area5 . . . ."
+  "line5 line5 line5 line5 line5 line5 line5 line5 line5 line5 line5 line5 line5"
+  "line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6"
+  "line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7"
+  "line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8"
+  "line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9"
+  "line10 line10 line10 line10 line10 line10 line10 line10 line10 line10 line10 line10 line10";
+}
+
+.introduction h2 {
+  grid-area: quote;
+}
+
+.vis1, .vis2, .vis3, .vis4, .vis5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vis1 {
+  grid-area: area1;
+}
+
+.vis1 img {
+  height: 20vw;
+  margin-left: 5vw;
+}
+
+.vis2 {
+  grid-area: area2;
+}
+
+.vis2 img {
+  height: 30vw;
+  margin-top: 20vh;
+}
+
+.vis3 {
+  grid-area: area3;
+}
+
+.vis3 img {
+  height: 30vw;
+  margin-left: 10vw;
+}
+
+.vis4 {
+  grid-area: area4;
+}
+
+.vis4 img {
+  height: 30vw;
+  margin-top: 10vh;
+}
+
+.vis5 {
+  grid-area: area5;
+}
+
+.vis5 img {
+  height: 25vw;
+  margin-top: 20vh;
 }
 
 .introduction p:nth-of-type(1) {
+  grid-area: line1;
   height: 30vh;
 }
 
 .introduction p:nth-of-type(2) {
+  grid-area: line2;
   height: 40vh;
-  margin-left: 30vw;
 }
 
 .introduction p:nth-of-type(3) {
+  grid-area: line3;
   height: 20vh;
   margin-top: 50vh;
   margin-left: -30vw;
 }
 
 .introduction p:nth-of-type(4) {
+  grid-area: line4;
   height: 20vh;
-  margin-top: 20vh;
-  margin-left: 20vw;
+  margin-top: 50vh;
+  margin-left: 10vw;
 }
 
 .introduction p:nth-of-type(5) {
+  grid-area: line5;
   height: 100vh;
   margin-top: 30vh;
 }
 
 .introduction p:nth-of-type(6) {
+  grid-area: line6;
   height: 100vh;
   margin-left: -70vw;
 }
 
 .introduction p:nth-of-type(7) {
+  grid-area: line7;
   height: 100vh;
 }
 
 .introduction p:nth-of-type(8) {
+  grid-area: line8;
   height: 100vh;
   margin-left: 60vw;
 }
 
 .introduction p:nth-of-type(9) {
+  grid-area: line9;
   height: 100vh;
 }
 
 .introduction p:nth-of-type(10) {
+  grid-area: line10;
   height: 100vh;
   margin-bottom: 20vh;
   font-weight: bold;
