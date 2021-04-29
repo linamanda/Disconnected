@@ -35,9 +35,6 @@ p {
   font-family: 'Inconsolata', monospace;
   font-size: 2vw;
   height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #00e01a;
   line-height: 3vw;
 }
@@ -76,9 +73,11 @@ span {
   ". . . . area4 area4 area4 area4 area4 area4 area4 area4 area4"
   "area5 area5 area5 area5 area5 area5 area5 area5 area5 . . . ."
   "line5 line5 line5 line5 line5 line5 line5 line5 line5 line5 line5 line5 line5"
+  "area6 area6 area6 area6 area6 area6 area6 area6 area6 area6 area6 area6 area6"
   "line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6"
   "line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7"
   "line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8"
+  "area7 area7 area7 area7 area7 area7 area7 area7 area7 area7 area7 area7 area7"
   "line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9"
   "line10 line10 line10 line10 line10 line10 line10 line10 line10 line10 line10 line10 line10";
 }
@@ -87,7 +86,7 @@ span {
   grid-area: quote;
 }
 
-.vis1, .vis2, .vis3, .vis4, .vis5 {
+.vis1, .vis2, .vis3, .vis4, .vis5, .vis6, .vis7, .vis8, .vis9, .vis10, .vis11 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +137,47 @@ span {
   margin-top: 20vh;
 }
 
+.vis6 {
+  grid-area: area6;
+}
+
+.vis6 img {
+  height: 30vw;
+  margin-top: 20vh;
+}
+
+.vis7 {
+  grid-area: area7;
+}
+
+.vis7 img {
+  height: 20vw;
+}
+
+.vis7 img:nth-of-type(1) {
+  margin-top: -20vh;
+}
+
+.vis7 img:nth-of-type(2) {
+  height: 10vw;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.vis7 img:nth-of-type(3) {
+  height: 15vw;
+  margin-top: 30vh;
+  margin-left: 5vw;
+}
+
+.introduction p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .introduction p:nth-of-type(1) {
   grid-area: line1;
   height: 30vh;
@@ -166,23 +206,25 @@ span {
   grid-area: line5;
   height: 100vh;
   margin-top: 30vh;
+  margin-bottom: -40vh;
 }
 
 .introduction p:nth-of-type(6) {
   grid-area: line6;
-  height: 100vh;
+  height: 20vh;
+  margin-top: 40vh;
   margin-left: -70vw;
 }
 
 .introduction p:nth-of-type(7) {
   grid-area: line7;
-  height: 100vh;
+  height: 10vh;
 }
 
 .introduction p:nth-of-type(8) {
   grid-area: line8;
-  height: 100vh;
-  margin-left: 60vw;
+  height: 10vh;
+  margin-left: 70vw;
 }
 
 .introduction p:nth-of-type(9) {
@@ -200,50 +242,140 @@ span {
 
 .dissociativeAnonymity {
   grid-area: dissAnon;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas:
+  "secTitle secTitle secTitle secTitle secTitle secTitle secTitle secTitle secTitle secTitle secTitle secTitle secTitle"
+  "line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1"
+  "line2 line2 line2 line2 line2 line2 line2 line2 line2 line2 line2 line2 line2"
+  "line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3"
+  "area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8 area8"
+  "line4 line4 line4 line4 line4 line4 line4 line4 line4 line4 line4 line4 line4"
+  "area9 area9 area9 area9 line5 line5 line5 line5 line5 line5 line5 line5 line5"
+  "line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6 line6"
+  "area10 area10 area10 area10 area10 area10 area10 area10 area10 area10 area10 area10 area10"
+  "line7 line7 line7 line7 line7 line7 line7 area11 area11 area11 area11 area11 area11"
+  "line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8";
+}
+
+.dissociativeAnonymity h2 {
+  grid-area: secTitle;
+}
+
+.dissociativeAnonymity p:nth-of-type(1) {
+  grid-area: line1;
+  height: 5vh;
+  margin-left: 10vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(2) {
+  grid-area: line2;
+  height: 5vh;
+  margin-left: 10vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(3) {
+  grid-area: line3;
+  height: 5vh;
+  margin-left: 10vw;
+}
+
+.vis8 {
+  grid-area: area8;
+}
+
+.vis8 img {
+  height: 20vw;
+}
+
+.vis8 img:nth-of-type(1) {
+  height: 10vw;
+  margin-top: 80vh;
+  padding: 0 5vw;
+}
+
+.vis8 img:nth-of-type(3) {
+  height: 10vw;
+  margin-top: 40vh;
+  padding: 0 5vw;
 }
 
 .dissociativeAnonymity p:nth-of-type(4) {
-  margin-left: -40vw;
+  grid-area: line4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vis9 {
+  grid-area: area9;
+}
+
+.vis9 img {
+  height: 35vw;
+  margin-left: 15vw;
+  margin-top: -40vh;
 }
 
 .dissociativeAnonymity p:nth-of-type(5) {
-  margin-left: 40vw;
-  margin-right: 10vw;
+  grid-area: line5;
+  margin-left: 20vw;
+  margin-right: 3vw;
+  margin-top: 20vh;
+  height: 70vh;
   line-height: 3vw;
+}
+
+.dissociativeAnonymity p:nth-of-type(6) {
+  grid-area: line6;
+  margin-top: 20vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.vis10 {
+  grid-area: area10;
+}
+
+.vis10 img {
+  height: 15vw;
+  margin-top: -30vh;
+}
+
+.vis10 img:nth-of-type(2) {
+  height: 10vw;
 }
 
 .dissociativeAnonymity p:nth-of-type(7) {
-  margin-left: -30vw;
+  grid-area: line7;
+  margin-left: 5vw;
+  margin-top: 40vh;
+}
+
+.vis11 {
+  grid-area: area11;
+}
+
+.vis11 img {
+  height: 20vw;
+  margin-top: 50vh;
 }
 
 .dissociativeAnonymity p:nth-of-type(8) {
-  margin-left: 30vw;
-}
-
-.dissociativeAnonymity p:nth-of-type(10) {
-  margin-left: 20vw;
-  margin-right: 20vw;
-  line-height: 3vw;
-}
-
-.dissociativeAnonymity p:nth-of-type(8) {
-  margin-left: 30vw;
-}
-
-.dissociativeAnonymity p:nth-of-type(15) {
-  height: 30vh;
-  margin-top: 30vh;
-  margin-left: -30vw;
-}
-
-.dissociativeAnonymity p:nth-of-type(16) {
-  height: 30vh;
-  margin-left: 10vw;
-  margin-bottom: 70vh;
+  grid-area: line8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .internetToxicity {
   grid-area: intTox;
+}
+
+.internetToxicity p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .internetToxicity p:nth-of-type(2) {
