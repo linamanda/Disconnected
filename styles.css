@@ -55,6 +55,7 @@ span {
   "netNeu"
   "mod"
   "hardBan";
+  margin-bottom: 20vh;
 }
 
 .introduction {
@@ -86,7 +87,7 @@ span {
   grid-area: quote;
 }
 
-.vis1, .vis2, .vis3, .vis4, .vis5, .vis6, .vis7, .vis8, .vis9, .vis10, .vis11, .vis12, .vis13, .vis14 {
+.vis1, .vis2, .vis3, .vis4, .vis5, .vis6, .vis7, .vis8, .vis9, .vis10, .vis11, .vis12, .vis13, .vis14, .vis15, .vis16, .vis17, .vis18, .vis19, .vis21, .vis22 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,7 +413,7 @@ span {
 .vis13 img {
   height: 17vw;
   margin-top: 20vh;
-  margin-left: -5vw;
+  margin-left: -2vw;
 }
 
 .internetToxicity p:nth-of-type(3) {
@@ -432,94 +433,276 @@ span {
 
 .netNeutrality {
   grid-area: netNeu;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas:
+  "line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1"
+  "def def def def def def def def def def def def def"
+  "line2 line2 line2 line2 line2 line2 line2 line2 line2 line2 line2 line2 line2"
+  "line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3"
+  "line4 line4 line4 line4 line4 line4 area15 area15 area15 area15 area15 area15 area15"
+  "line5 line5 line5 line5 line5 line5 area15 area15 area15 area15 area15 area15 area15"
+  "line6 line6 line6 line6 line6 line6 area15 area15 area15 area15 area15 area15 area15"
+  "area16 area16 area16 area16 area16 area16 area16 area16 area16 area16 area16 area16 area16"
+  "line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7"
+  "line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8 line8"
+  "area17 area17 area17 area17 area17 area17 area17 area17 area17 area17 area17 area17 area17"
+  "line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9 line9"
+  "area18 area18 area18 area18 area18 area18 area18 area18 area18 area18 area18 area18 area18";
 }
 
 .netNeutrality p:nth-of-type(1) {
+  grid-area: line1;
   margin-top: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.netNeutrality h2 {
+  grid-area: def;
+}
+
+.netNeutrality p:nth-of-type(2) {
+  grid-area: line2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40vh;
+}
+
+.netNeutrality p:nth-of-type(3) {
+  grid-area: line3;
+  height: 5vw;
+  margin-left: 5vw;
 }
 
 .netNeutrality p:nth-of-type(4) {
-  margin-left: 40vw;
+  grid-area: line4;
+  height: 5vw;
+  margin-left: 5vw;
 }
 
 .netNeutrality p:nth-of-type(5) {
-  margin-left: -40vw;
+  grid-area: line5;
+  height: 5vw;
+  margin-left: 5vw;
+}
+
+.netNeutrality p:nth-of-type(6) {
+  grid-area: line6;
+  height: 5vw;
+  margin-left: 5vw;
+}
+
+.vis15 {
+  grid-area: area15;
+}
+
+.vis15 img {
+  height: 15vw;
+}
+
+.vis16 {
+  grid-area: area16;
+}
+
+.vis16 img {
+  height: 30vw;
+  margin-top: 20vh;
 }
 
 .netNeutrality p:nth-of-type(7) {
-  margin-top: 40vw;
+  grid-area: line7;
+  margin-top: 30vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
-.netNeutrality p:nth-of-type(10) {
-  margin-left: -50vw;
+.netNeutrality p:nth-of-type(8) {
+  grid-area: line8;
+  height: 10vw;
+  margin-left: 20vw;
+  margin-top: -40vh;
 }
 
-.netNeutrality p:nth-of-type(11) {
-  margin-left: 50vw;
+.vis17 {
+  grid-area: area17;
 }
 
-.netNeutrality p:nth-of-type(12) {
-  height: 20vh;
-  margin-top: 30vh;
-  margin-left: -20vw;
+.vis17 img {
+  height: 30vw;
 }
 
-.netNeutrality p:nth-of-type(13) {
-  height: 20vh;
-  margin-left: 10vw;
-  margin-bottom: 50vh;
+.netNeutrality p:nth-of-type(9) {
+  grid-area: line9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+.vis18 {
+  grid-area: area18;
+}
+
+.vis18 img:nth-of-type(1) {
+  height: 30vw;
+}
+
+.vis18 img:nth-of-type(2) {
+  height: 10vw;
+  margin-top: -50vh;
 }
 
 .moderation {
   grid-area: mod;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas:
+  "sub sub sub sub sub sub sub sub sub sub sub sub sub"
+  "line1 line1 line1 line1 line1 line1 line1 line1 area19 area19 area19 area19 area19"
+  "line2 line2 line2 line2 line2 line2 line2 line2 area19 area19 area19 area19 area19"
+  "line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3"
+  "line4 line4 line4 line4 line4 line4 line4 line4 area20 area20 area20 area20 area20"
+  "line5 line5 line5 line5 line5 line5 line5 line5 area20 area20 area20 area20 area20"
+  "line6 line6 line6 line6 line6 line6 line6 line6 area20 area20 area20 area20 area20"
+  "line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7 line7";
+}
+
+.moderation h2 {
+  grid-area: sub;
+}
+
+.moderation p:nth-of-type(1) {
+  grid-area: line1;
+  height: 5vw;
+  margin-left: 3vw;
+  margin-top: 10vh;
+}
+
+.moderation p:nth-of-type(2) {
+  grid-area: line2;
+  height: 5vw;
+  margin-left: 15vw;
+}
+
+.vis19 {
+  grid-area: area19;
+}
+
+.vis19 img {
+  height: 20vw;
+}
+
+.moderation p:nth-of-type(3) {
+  grid-area: line3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40vh;
+  margin-bottom: 20vh;
 }
 
 .moderation p:nth-of-type(4) {
-  margin-left: 40vw;
+  grid-area: line4;
+  height: 5vw;
+  margin-left: 3vw;
+}
+
+.moderation p:nth-of-type(5) {
+  grid-area: line5;
+  height: 10vw;
+  margin-left: 30vw;
+  display: flex;
+  align-items: center;
 }
 
 .moderation p:nth-of-type(6) {
-  height: 70vh;
-  margin-left: -60vw;
+  grid-area: line6;
+  height: 10vw;
+  margin-left: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.vis20 {
+  grid-area: area20;
+  display: flex;
+  flex-direction: column;
+}
+
+.vis20 img {
+  width: 10vw;
+}
+
+.vis20 img:nth-of-type(2) {
+  margin-left: 20vw;
+}
+
+.vis20 img:nth-of-type(3) {
+  margin-left: 8vw;
 }
 
 .moderation p:nth-of-type(7) {
-  height: 70vh;
-}
-
-.moderation p:nth-of-type(8) {
-  height: 70vh;
-  margin-left: 60vw;
-}
-
-.moderation p:nth-of-type(9) {
-  height: 70vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-bottom: 30vh;
-  line-height: 3vw;
-  text-align: center;
+  grid-area: line7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
 }
 
 .hardwareBanning {
   grid-area: hardBan;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-areas:
+  "sub sub sub sub sub sub sub sub sub sub sub sub sub"
+  "line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1 line1"
+  "line2 line2 line2 line2 line2 line2 line2 line2 line2 area21 area21 area21 area21"
+  "line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3 line3"
+  "area22 area22 area22 area22 area22 area22 area22 area22 area22 area22 area22 area22 area22";
+}
+
+.hardwareBanning h2 {
+  grid-area: sub;
+}
+
+.hardwareBanning p:nth-of-type(1) {
+  grid-area: line1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hardwareBanning p:nth-of-type(2) {
-  margin-left: -60vw;
+  grid-area: line2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5vw;
+}
+
+.vis21 {
+  grid-area: area21;
+}
+
+.vis21 img {
+  height: 20vw;
 }
 
 .hardwareBanning p:nth-of-type(3) {
-  margin-left: 60vw;
+  grid-area: line3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hardwareBanning p:nth-of-type(4) {
-  margin-left: 20vw;
-  margin-right: 20vw;
-  line-height: 3vw;
-  text-align: center;
+.vis22 {
+  grid-area: area22;
 }
 
-.hardwareBanning p:nth-of-type(5) {
-  height: 100vh;
+.vis22 img {
+  height: 20vw;
+  margin-top: -20vh;
 }
